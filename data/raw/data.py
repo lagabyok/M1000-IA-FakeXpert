@@ -5,8 +5,8 @@ true_data = pd.read_csv(r'C:\Users\facus\OneDrive\Documents\M1000-IA-FakeXpert\d
 false_data = pd.read_csv(r'C:\Users\facus\OneDrive\Documents\M1000-IA-FakeXpert\data\raw\Fake_converted.csv')
 
 # Agregar una nueva columna indicando la fuente
-true_data['source'] = 'True'
-false_data['source'] = 'False'
+true_data['label'] = 'True'
+false_data['label'] = 'False'
 
 # Concatenar los DataFrames
 combined_data = pd.concat([true_data, false_data], ignore_index=True)
